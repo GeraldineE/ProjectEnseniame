@@ -1,0 +1,137 @@
+// Place all the styles related to the Tutors controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body{
+
+
+}
+
+.container  {
+
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#00c1b5+0,6476a9+100 */
+  background: #00c1b5; /* browsers */
+  background: -moz-linear-gradient(top, #00c1b5 0%, #6476a9 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #00c1b5 0%,#6476a9 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #00c1b5 0%,#6476a9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00c1b5', endColorstr='#6476a9',GradientType=0 ); /* IE6-9 */
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+
+  h1 {
+    text-align: center;
+    margin-top: 10px;
+    font-family: helvetica;
+    color: #FFFFFF;
+    font-weight: 100;
+
+
+   }
+  .circle1{
+      position: relative;
+      margin-top: 15;
+      margin-left: 48%;
+      padding-top: 10%;
+      /*border: 2px solid #FFFFFF;*/
+      }
+
+  form {
+
+    background-color: #fff;
+    display: block;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding: 30px;
+    margin-top:3%;
+    padding-top: 3%;
+    border-radius: 5px;
+
+    .field {
+      display: flex;
+      line-height: 30px;
+      justify-content: center;
+      padding-top:15px;
+
+      label {
+        line-height: 30px; /* permite el alto de la linea */
+        width: 30%;
+        text-align: left;
+        padding-right: 15px;
+
+      }
+      input { //triste
+        padding: 5px;/* no empezar tan el borde del textbox*/
+        width: 80%;
+        border: 0; /*sin borde para ingresar los campos en el textbox del registro */
+        border-bottom: 2px solid #f4f4f4; /* border inferior */
+
+      }
+      input:focus { // feliz y el focus es que? un estado, puedes darle un esrilo a un elemento en un estado particular oh
+        outline: none;// sin bordes esos azules que tenia
+        border-bottom: 2px solid #7DEBEB;
+      }
+      input:focus:after { transform: scaleX(1); }
+  }
+}
+
+.form-btn {
+
+  background-color: #00CCB1;
+  border: 1px;
+  display: block;
+  cursor: pointer;
+  color: white;
+  font-family: helvetica;
+  font-size: 15px;
+  /* font-weight: bold; */
+  /* padding: 6px 24px; */
+  text-decoration: none;
+  /* width: 25%; */
+  padding: 10px;
+  font-family: helvetica;
+  /* border-radius: 0; */
+  /* margin-top: 20px; */
+  /* margin-left: 100px; */
+  font-weight: 400;
+  /* padding-left: 20px; */
+  justify-content: center;
+  /* padding-right: 20px; */
+  width: 100%;
+  margin: 2px;
+
+}
+
+.btn{// mira el botno rojo
+  background: #D45E5E;
+  display: block;
+  cursor: pointer;
+  color: white;
+  font-family: helvetica;
+  font-size: 15px;
+  /* font-weight: bold; */
+  /* padding: 6px 24px; */
+  text-decoration: none;
+  /* width: 25%; */
+  padding: 10px;
+  font-family: helvetica;
+  /* border-radius: 0; */
+  /* margin-top: 20px; */
+  /* border-radius: 0; */
+  /* justify-content: center; */
+  width: 100%;
+  margin: 2px;
+
+
+
+}
+.actions{
+  margin-top:40px;
+  text-align: center;
+  display: flex;
+
+
+ }
+
+}

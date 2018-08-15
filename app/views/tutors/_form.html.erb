@@ -1,0 +1,32 @@
+<%= form_with(model: tutor, local: true) do |form| %>
+  <% if tutor.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(tutor.errors.count, "error") %> prohibited this tutor from being saved:</h2>
+
+      <ul>
+      <% tutor.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.text_field :name, id: :tutor_name, placeholder: 'Nombre' %>
+  </div>
+
+  <div class="field">
+    <%= form.text_field :last_name, id: :tutor_last_name, placeholder: 'Apellido' %>
+  </div>
+
+  <div class="field">
+    <%= form.text_field :email, id: :tutor_email, placeholder: 'Email' %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit 'Registrar', class: "form-btn" %>
+      <a href= "/tutors " class="btn" >Cancelar</a>
+  </div>
+
+
+<% end %>
